@@ -1,24 +1,26 @@
 <template>
   <div>
-    <h1>{{title}}</h1>
-    <p>{{ greeting() }}</p>
+    <app-header></app-header>
+    <app-ninjas></app-ninjas>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      title: 'Your first Vue file, wooo!'
-    }
-  },
+  import Header from './components/Header.vue'
+  import Footer from './components/Footer.vue'
+  import Ninjas from './components/Ninjas.vue'
 
-  methods: {
-    greeting: function(){
-      return 'heeeey cowboy!';
+  export default {
+    components: {
+      'app-header': Header,
+      'app-footer': Footer,
+      'app-ninjas': Ninjas
+    },
+
+    data () {
     }
   }
-}
 </script>
 
 <style>
