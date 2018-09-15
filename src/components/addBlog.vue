@@ -10,7 +10,8 @@
     <div id=preview>
       <h3>Preview Blog</h3>
       <p>Blog title: {{blog.title}}</p>
-      <p>Blog content: {{blog.content}}</p>
+      <p>Blog content:</p>
+      <p>{{blog.content}}</p>
     </div>
   </div>
 </template>
