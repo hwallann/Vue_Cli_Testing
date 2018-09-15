@@ -31,6 +31,26 @@
       deleteNinja: function() {
         this.ninjas.pop()
       }
+    },
+    // lifecycle hooks
+    beforeCreate(){
+      alert('beforeCreate');
+    },
+    created(){
+      // Smart to collect dated in this section than in mounted
+      alert('created'); // Good for collecting data
+    },
+    beforeMount(){
+      alert('beforeMount');
+    },
+    mounted(){
+      alert('mounted'); // Good for manipulating the DOM once it has been created
+    },
+    beforeUpdate(){
+      alert('beforeUpdated');
+    },
+    updated(){
+      alert('updated'); // Good to track updates(?)
     }
   }
 </script>
