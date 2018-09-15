@@ -1,7 +1,9 @@
 # vuejs-playlist
-
 > A Vue.js project
 
+## Uses: 
+> "Vue JS 2 Tutorial"'s by The Net Ninja (https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
+> https://www.youtube.com/watch?v=MBZVDsB4VMA
 ## Build Setup
 
 ``` bash
