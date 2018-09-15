@@ -1,22 +1,27 @@
 <template>
   <div>
-    <h1>{{title}}</h1>
-    <p>{{ greeting() }}</p>
+    <form-helper>
+      <!--<h2 slot="title">I am the slot title</h2>-->
+      <h2 slot="title">{{ title }}</h2>
+      <p slot="text">I am the paragraph text for the slot</p>
+    </form-helper>
   </div>
 </template>
 
 <script>
+// Imports
+import formHelper from './components/formHelper.vue'
 export default {
+  components: {
+    'form-helper': formHelper
+  },
   data () {
     return {
-      title: 'Your first Vue file, wooo!'
+      title: 'I am a dynamic slot title'
     }
   },
-
   methods: {
-    greeting: function(){
-      return 'heeeey cowboy!';
-    }
+
   }
 }
 </script>
