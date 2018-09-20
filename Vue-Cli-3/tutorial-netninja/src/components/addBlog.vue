@@ -12,8 +12,6 @@
         <input type="checkbox" value="ninjas" v-model="blog.categories" />
         <label>Wizards</label>
         <input type="checkbox" value="wizards" v-model="blog.categories" />
-        <label>Magi</label>
-        <input type="checkbox" value="magi" v-model="blog.categories" />
         <label>Mario</label>
         <input type="checkbox" value="mario" v-model="blog.categories" />
         <label>Cheese</label>
