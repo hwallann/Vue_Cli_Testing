@@ -1,0 +1,16 @@
+HowTo:
+1.vue create <name of project>
+2.choose manually
+	Babel
+	Vuex
+	Router
+	CSS
+	Linter
+3. History mode -> y
+4. Stylus as CSS pre-processor
+5. ESlint wit error prevention only
+6. Lint on save
+7. In package.json
+8. Save preset? (n)
+
+-> npm i pug --save
