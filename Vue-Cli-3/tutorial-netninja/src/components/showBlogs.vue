@@ -1,7 +1,7 @@
 <template>
   <div v-theme:column="'narrow'" id="show-blogs">
     <h1>All blog Articles</h1>
-    <input type="text" v-model="search" placeholder="search blogs">
+    <input type="text" v-model="search" placeholder="search blogs" id=searchfield>
     <div v-for="blog in filteredBlogs" class="single-blog">
       <h2 v-rainbow>{{ blog.title | to-uppercase }}</h2>
       <article>{{ blog.body | snippet }}</article>
@@ -62,5 +62,9 @@
   margin: 20px 0;
   box-sizing: border-box;
   background: #eee;
+}
+
+#searchfield{
+  box-sizing: border-box;
 }
 </style>

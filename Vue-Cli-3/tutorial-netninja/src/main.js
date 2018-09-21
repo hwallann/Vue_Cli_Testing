@@ -28,6 +28,8 @@ Vue.directive('theme', {
 		if (binding.arg == 'column') {
 			el.style.background = '#ddd';
 			el.style.padding = '20px';
+			el.style.margin = '20px auto';
+			el.style.maxWidth = '800px'
 		}
 	}
 })
