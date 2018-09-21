@@ -15,7 +15,7 @@
 		},
 		created() {
 			this.$http.get('https://jsonplaceholder.typicode.com/posts/' + this.id).then(function(data) {
-				console.log(data);
+				//console.log(data);
 				this.blog = data.body;
 			})
 		}
