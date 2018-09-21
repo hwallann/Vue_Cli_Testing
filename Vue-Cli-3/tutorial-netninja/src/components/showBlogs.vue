@@ -34,6 +34,12 @@
           return blog.title.match(this.search)
         })
       }
+    },
+    
+    filters: {
+      'to-uppercase': function(value) {
+        return value.toUpperCase();
+      }
     }
 }
 </script>
